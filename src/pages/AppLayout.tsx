@@ -1,9 +1,10 @@
 import { Outlet } from "react-router";
+import Banner from "../components/Banner";
 
 const AppLayout = () => {
   return (
     <>
-      <p>banner</p>
+      <Banner />
       <p>Navbar</p>
       <main className="min-h-screen">
         <Outlet />

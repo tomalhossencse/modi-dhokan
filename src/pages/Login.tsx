@@ -34,6 +34,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+
       {/* right side */}
       <div className="flex-1 flex-center px-4 py-12 bg-app-cream">
         <div className="w-full max-w-md">
