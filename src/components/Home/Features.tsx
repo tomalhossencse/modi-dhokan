@@ -12,7 +12,6 @@ const Features = () => {
               </div>
               <div>
                 <p className="text-sm font-semibold text-app-green">
-                  {" "}
                   {feature.title}
                 </p>
                 <p className="text-xs text-app-text-light"> {feature.desc}</p>
