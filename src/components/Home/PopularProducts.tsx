@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import type { Product } from "../../types";
 import { dummyProducts } from "../../assets/assets";
 import { Link } from "react-router";
 import { ArrowRightIcon } from "lucide-react";
 import ProductCard from "../ProductCard";
 
 const PopularProducts = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  // const [products, setProducts] = useState<Product[]>([]);
+  const products = dummyProducts.slice(0, 10);
 
-  useEffect(() => {
-    setProducts(dummyProducts.slice(0, 10));
-  }, []);
+  // useEffect(() => {
+  //   setProducts(dummyProducts.slice(0, 10));
+  // }, []);
 
   return (
     <section className="pb-18">
       <div className="max-w-7xl mx-auto">
+        {/* header */}
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-2xl font-semibold">Popular Products</h2>
@@ -22,6 +22,7 @@ const PopularProducts = () => {
               Top-rated Products this season
             </p>
           </div>
+
           <Link
             to="/products"
             className="text-sm font-semibold text-app-orange hover:text-app-orange-dark flex items-center gap-1 transition-colors"
@@ -29,7 +30,7 @@ const PopularProducts = () => {
             View All <ArrowRightIcon className="size-4" />
           </Link>
         </div>
-
+        {/* product grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 xl:gap-8">
           {products.map((product) => (
             <ProductCard key={product._id} product={product} />

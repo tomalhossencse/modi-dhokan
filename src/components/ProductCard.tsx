@@ -35,6 +35,7 @@ const ProductCard = ({ product }: Props) => {
           )}
         </div>
       </div>
+
       {/* product info */}
       <div className="p-3.5 text-zinc-700">
         <h3 className="text-sm leading-snug mb-1.5 line-clamp-2">
@@ -56,6 +57,7 @@ const ProductCard = ({ product }: Props) => {
 
         {/* price & add */}
         <div className="flex items-center justify-between">
+          {/* price */}
           <div className="flex items-center gap-1 truncate">
             <span className="text-base font-medium">
               {currency}
@@ -73,7 +75,7 @@ const ProductCard = ({ product }: Props) => {
               </span>
             )}
           </div>
-
+          {/* add to cart button */}
           <button
             onClick={(e) => {
               e.stopPropagation();

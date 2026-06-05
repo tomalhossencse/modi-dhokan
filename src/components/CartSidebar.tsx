@@ -45,6 +45,7 @@ const CartSidebar = () => {
               {items.length} items
             </span>
           </div>
+
           <button
             onClick={() => setIsCartOpen(false)}
             className="p-2 rounded-xl hover:bg-app-cream transition-colors"
@@ -66,12 +67,13 @@ const CartSidebar = () => {
                 key={item.product._id}
                 className="flex gap-3 bg-app-cream/60 rounded-xl p-3"
               >
+                {/* product image */}
                 <img
                   src={item.product.image}
                   alt={item.product.name}
                   className="size-16 rounded-lg object-cover shrink-0"
                 />
-
+                {/* cart content  */}
                 <div className="flex-1 min-w-0">
                   <h4 className="text-sm font-semibold truncate">
                     {item.product.name}

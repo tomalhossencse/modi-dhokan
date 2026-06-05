@@ -6,6 +6,7 @@ import {
   type ReactNode,
 } from "react";
 import type { CartItem, Product } from "../types";
+
 interface CartContextType {
   items: CartItem[];
   addToCart: (product: Product, quantity?: number) => void;
@@ -36,7 +37,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const existing = prev.find((item) => item.product._id === product._id);
       if (existing) {
         return prev.map((item) =>
-          item.product._id === product.id
+          item.product._id === product._id
             ? { ...item, quantity: item.quantity + quantity }
             : item,
         );
@@ -68,6 +69,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   };
 
   const cartCount = items.reduce((sum, item) => sum + item.quantity, 0);
+
   const cartTotal = items.reduce(
     (sum, item) => sum + item.product.price * item.quantity,
     0,
