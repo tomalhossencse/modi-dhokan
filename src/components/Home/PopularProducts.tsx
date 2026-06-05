@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Product } from "../../types";
 import { dummyProducts } from "../../assets/assets";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ArrowRightIcon } from "lucide-react";
 import ProductCard from "../ProductCard";
 

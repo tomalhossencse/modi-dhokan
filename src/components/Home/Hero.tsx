@@ -1,6 +1,6 @@
 import { ArrowRightIcon, LeafIcon } from "lucide-react";
 import { heroSectionData } from "../../assets/assets";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (

@@ -1,5 +1,5 @@
 import { BikeIcon } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { footerData } from "../assets/assets";
 
 const Footer = () => {
