@@ -20,6 +20,7 @@ const FilterPanel = ({
         <h3 className="text-sm font-semibold text-app-green mb-3">
           Categories
         </h3>
+
         <div className="space-y-1.5">
           {categoriesWithAll.map((cat: any) => (
             <button
@@ -34,6 +35,7 @@ const FilterPanel = ({
           ))}
         </div>
       </div>
+
       {/* price Range */}
       <div>
         <h3 className="text-sm font-semibold text-app-green mb-3">
@@ -59,6 +61,8 @@ const FilterPanel = ({
           />
         </div>
       </div>
+
+      {/* clear filter button */}
       {hasFilters && (
         <button
           onClick={clearFilters}

@@ -2,13 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router";
 import type { Product } from "../types";
 import { categoriesData, dummyProducts } from "../assets/assets";
-import {
-  ChevronDown,
-  Filter,
-  Home,
-  SlidersHorizontal,
-  XIcon,
-} from "lucide-react";
+import { ChevronDown, Home, SlidersHorizontal, XIcon } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import Loading from "../components/Loading";
 import FilterPanel from "../components/FilterPanel";
@@ -75,7 +69,7 @@ const Products = () => {
         <div className="flex gap-8 xl:gap-10">
           {/* sidebar - desktop */}
           <aside className="hidden lg:block w-64 shrink-0">
-            <div className="bg-white rounded-2xl p-4 sticky top-24 ">
+            <div className="bg-white rounded-2xl p-4 sticky top-24">
               <FilterPanel
                 categories={categoriesData}
                 category={category}
@@ -88,6 +82,7 @@ const Products = () => {
               />
             </div>
           </aside>
+
           {/* main content */}
           <main className="flex-1">
             {/* Header */}
@@ -111,7 +106,6 @@ const Products = () => {
                 </button>
 
                 {/* sort */}
-
                 <div className="relative">
                   <select
                     value={sort}
@@ -178,8 +172,8 @@ const Products = () => {
           </main>
         </div>
       </div>
-      {/* mobile filters Model */}
 
+      {/* mobile filters Model */}
       {mobileFilterOpen && (
         <>
           <div

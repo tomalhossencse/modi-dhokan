@@ -66,7 +66,7 @@ export const appPromoBannerData = {
 
 export const footerData = {
   brand: {
-    name: "Instacart",
+    name: "Modi Dhokan",
     description:
       "Bringing fresh, organic groceries straight from local farms to your doorstep. Nourish your home with Earth's finest.",
     socials: [
@@ -104,7 +104,7 @@ export const footerData = {
   ],
 
   bottom: {
-    copyright: "© 2026 Greatstack. All rights reserved.",
+    copyright: "© 2026 Modi Dhokan. All rights reserved.",
     links: [
       { label: "Privacy Policy", href: "#" },
       { label: "Terms of Service", href: "#" },
@@ -139,7 +139,7 @@ export const dummyProducts = [
     unit: "100g",
     stock: 100,
     isOrganic: false,
-    rating: 4.5,
+    rating: 3.5,
     reviewCount: 12,
     __v: 0,
     createdAt: "2026-03-24T05:50:11.118Z",

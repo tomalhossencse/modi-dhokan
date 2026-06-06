@@ -15,6 +15,7 @@ import {
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { useCart } from "../context/CartContext";
+import { footerData } from "../assets/assets";
 
 const Navbar = () => {
   const user: any = {
@@ -52,7 +53,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2 text-[22px] font-medium shrink-0"
         >
-          <BikeIcon size={24} /> Modi Dhokan
+          <BikeIcon size={24} /> {footerData.brand.name}
         </Link>
 
         <div className="w-full flex items-center justify-end gap-4 lg:gap-10">
