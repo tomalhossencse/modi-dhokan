@@ -64,6 +64,7 @@ const MyOrders = () => {
             <h2 className="text-lg font-medium text-app-green mb-2">
               No orders yet
             </h2>
+
             <p className="text-sm text-app-text-light mb-4">
               Start shopping to see your orders here
             </p>
