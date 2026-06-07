@@ -892,6 +892,7 @@ export const dummyDashboardOrdersData = [
     deliveryPartner: {
       _id: "69bbfc3866db7c6cdea47ede",
       name: "Rahul",
+      vehicleType: "bike",
       email: "rahul@example.com",
       phone: "987654321",
     },
@@ -979,6 +980,7 @@ export const dummyDashboardOrdersData = [
     deliveryPartner: {
       _id: "69bbfc3866db7c6cdea47ede",
       name: "Rahul",
+      vehicleType: "bike",
       email: "rahul@example.com",
       phone: "987654321",
     },

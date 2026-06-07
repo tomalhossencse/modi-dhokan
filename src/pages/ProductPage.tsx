@@ -14,7 +14,6 @@ import {
   ShoppingCartIcon,
   StarIcon,
 } from "lucide-react";
-import { icon } from "leaflet";
 import DummyReviewsSection from "../assets/DummyReviewsSection";
 import ProductCard from "../components/ProductCard";
 
