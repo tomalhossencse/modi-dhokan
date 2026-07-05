@@ -12,7 +12,7 @@ A modern and responsive **e-commerce frontend** built with **React, TypeScript, 
 
 | Home Page | Products |
 |-----------|----------|
-| ![Home](https://i.ibb.co.com/FqBbYXys/screencapture-modi-dhokan-vercel-app-2026-07-04-16-20-27.png) | ![Products](./public/projects/modidhokan-2.png) |
+| ![Home](https://i.ibb.co.com/FqBbYXys/screencapture-modi-dhokan-vercel-app-2026-07-04-16-20-27.png) | ![Products](https://i.ibb.co.com/k2nwxVkQ/screencapture-modi-dhokan-vercel-app-products-2026-07-04-16-20-52.png) |
 
 ---
 
