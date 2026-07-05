@@ -1,74 +1,158 @@
-# React + TypeScript + Vite
+# 🛒 ModiDhokan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **e-commerce frontend** built with **React, TypeScript, Vite, and Tailwind CSS**. The project focuses on delivering a clean shopping experience with reusable components, responsive layouts, interactive maps, and modern UI practices.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** https://modi-dhokan.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Add screenshots here
 
-## Expanding the ESLint configuration
+| Home Page | Products |
+|-----------|----------|
+| ![Home](https://i.ibb.co.com/FqBbYXys/screencapture-modi-dhokan-vercel-app-2026-07-04-16-20-27.png) | ![Products](./public/projects/modidhokan-2.png) |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🛍️ Modern and responsive e-commerce UI
+- 📱 Fully responsive design for desktop, tablet, and mobile
+- ⚡ Fast performance powered by Vite
+- 🧩 Reusable React components
+- 🗺️ Interactive map integration using Leaflet
+- 🔔 Beautiful toast notifications
+- 🎨 Clean and modern UI built with Tailwind CSS
+- 🔄 Client-side routing using React Router
+- 💻 Built with TypeScript for better maintainability
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Leaflet
+- React Leaflet
+- Lucide React
+- React Hot Toast
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
+- Vercel
+
+---
+
+# 📂 Folder Structure
+
+```text
+src
+│
+├── assets
+├── components
+├── pages
+├── layouts
+├── routes
+├── context
+├── types
+├── data
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Clone the repository
+
+```bash
+git clone https://github.com/tomalhossencse/modi-dhokan.git
 ```
-# modi-dhokan
+
+## Navigate to the project
+
+```bash
+cd modi-dhokan
+```
+
+## Install dependencies
+
+```bash
+npm install
+```
+
+## Start the development server
+
+```bash
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+# 📋 Available Scripts
+
+| Command | Description |
+|----------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+---
+
+# 🎯 Project Features
+
+- Product details page
+- Authentication
+- Checkout page
+- Admin dashboard
+- Delivery partner dashboard
+- customer dashboard
+- Product search
+- Category filtering
+- Shopping cart
+
+This project was built to practice:
+- Modern React development
+- TypeScript
+- Component-based architecture
+- Responsive UI design
+- Tailwind CSS
+- React Router
+- Interactive maps with Leaflet
+- Clean and maintainable code structure
+
+---
+
+
+⭐ If you like this project, consider giving it a **Star** on GitHub!
